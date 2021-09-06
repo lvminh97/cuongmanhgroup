@@ -1,0 +1,6 @@
+RewriteEngine on
+Options +FollowSymlinks
+Options -Indexes
+
+RewriteRule ^bai-viet-([a-zA-Z\.\-\_0-9]+)-([0-9]+).html$ post.php?id=$2&title=$1 [L]
+RewriteRule ^san-pham-([a-zA-Z\.\-\_0-9]+)-([0-9]+)([0-9]+).html$ product-detail.php?id=$2&title=$1&company=$3 [L]
